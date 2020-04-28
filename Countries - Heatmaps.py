@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# ## HEAT MAPS: Cluster Analysis
+# ## Countries - Cluster Analysis
 
 # In[1]:
 
