@@ -3,9 +3,6 @@
 
 # ## Countries - Cluster Analysis
 
-# In[1]:
-
-
 # Clustering of Clustering
 # Types of Clustering:
 # 1. Flat - i.e. K-Means
@@ -26,10 +23,6 @@
 
 
 # ### Import the Relevant Libraries
-
-# In[3]:
-
-
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -39,36 +32,18 @@ sns.set() #set style to seaborn
 
 # ### Load the Data
 
-# In[4]:
-
-
 # 'pd.read_csv(*.csv, index_col)' loads a given CSV file as a data frame
 # 'index_col' is an argument which can specify a given column from the CSV as index of the data frame 
 data = pd.read_csv('Country clusters standardized.csv', index_col='Country')
 
 
-# In[6]:
-
-
 x_scaled = data.copy()
 x_scaled = x_scaled.drop(['Language'], axis=1) # remove 'Language' column
-
-
-# In[8]:
-
-
 x_scaled
 
 
 # ### Plot the Data
-
-# In[10]:
-
-
 sns.clustermap(x_scaled, cmap='mako')
-
-
-# In[11]:
 
 
 # on the left side: dendogram
@@ -77,10 +52,3 @@ sns.clustermap(x_scaled, cmap='mako')
 # on the right: observations
 
 # note that Australia is a complete different color due to it being the only country in the southern hemisphere
-
-
-# In[ ]:
-
-
-
-
